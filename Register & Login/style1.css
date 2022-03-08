@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #CD5C5C;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    float:  center;
+}
+
+.title{
+    float: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    font-style: inherit;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center{
+    float: center;
+    font-family: -apple-system;
+    color: seashell;
+    
+}
+.input-field{
+    float: center;
+    position: relative;
+    width: 400px;
+    box-shadow: #F08080;
+}
+
+.input-field input:focus ~ label{
+    color: black;
+}
+#username:focus {
+    outline: none;
+    box-shadow: 0 0 10px black;
+    color: white;
+    border-bottom:3px solid black;
+}
+
+#password:focus {
+    outline: none;
+    box-shadow: 0 0 10px black;
+    color: white;
+    border-bottom:3px solid black;
+}
+
+label{
+    position: absolute;
+    top: 23px;
+    margin-bottom:20px;
+    font-size: 16px;
+    left: -30px;
+    pointer-events: none;
+    transition: .5s;
+    color:whitesmoke;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+#username{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: -38px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:-apple-system;
+    color : black;
+    padding-left: 9px;
+    padding-top: 3px;
+    padding-bottom: -50px;
+    height: 65px;
+    width: 480px;
+    border-bottom: 3px solid white;
+    border-radius: 2px;
+    background-color:  #F08080;
+}
+
+#password{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: -38px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: -apple-system;
+    color:black;
+    padding-left: 9px;
+    padding-top: 3px;
+    padding-bottom: -50px;
+    height: 65px;
+    width: 480px;
+    background-color:  #F08080;
+    border-bottom: 3px solid white;
+}
+
+
+#btnsubmit{
+            width: 490px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 18px;
+            border-radius: 25px;
+            background-color: #FA8072;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: white;
+            font-size: 17px;
+            font-weight: 800;
+}
+
+#btnsubmit:hover{
+background-color: maroon;
+}
+
+span{
+position: absolute;
+left: 460px;
+bottom: 30px;
+font-size: 20px;
+
+}
+
+
+.link{
+    font-family: Verdana;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+.footer{
+color: white;
+font-size: 13px;
+font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
+height: 250px;
+position: relative;
+}
+
+.footer .descriptions{
+height: 50px;
+float: center;
+text-align: center;
+word-spacing: 100px;
+position: absolute;
+bottom: 0px;
+width: 100%;
+left: 0px;
+padding-left: 10px;
+padding-top: 20px;
+}
+
+/*https://stackoverflow.com/questions/47551418/zoom-effect-on-text-words-on-mouseover*/
+.footer .descriptions a{
+    color: ivory;
+    display: inline-block;
+    transition: .1s;
+    -webkit-transition: all 0.1s ease-out;
+}
+.footer .descriptions a:hover{
+    transform: scale(1.0);
+    -webkit-transform: scale(1.4) ;
+    color: peachpuff;
+    cursor: pointer;
+}
+.copyright{
+    color: snow;
+    word-spacing: normal;
+    font-style: italic;
+    font-weight: 600px;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: -840px;
+}

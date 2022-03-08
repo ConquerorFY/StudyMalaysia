@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Culture and Environment</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='main_style.css'>
+</head>
+
+<body>
+  <header>
+  <img class="logo" src = "Screenshot 2020-08-22 at 10.02.00 PM.png">
+        <nav>
+          <ul class ="nav_links">
+            <li><a class="nav-items" href="../Main Page/MainPage.php">Main Page</a></li>
+            <li><a class="nav-items" href="../Static/PrivateUni.html">Private Universities</a></li>
+            <li><a class="nav-items" href="../Static/Student Life.html">Student Life in Malaysia</a></li>
+            <li><a class="nav-items" href="../Static/Why Study.html">Why Study in
+                Malaysia</a></li>
+            <li><a class="nav-items" href="#" style="pointer-events: none; color:wheat; border: 2px solid darkred;padding: 1px 1px 1px 1px;">Culture and Environment</a></li>
+            <li><a class="nav-items" href="../Feedback/Feedback & Enquiry.php">Feedback or Enquiry</a></li>
+           </ul>
+            <form>
+                <input type="text" class = "box" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+        </nav>
+  </header>
+  <h1 id='intro' style='margin-top: 80px;margin-left: 50px;'>Malaysia Culture and Environment</h1>
+    <img style='margin-top: 300px;'
+        src='malaysiaculture.jpg' height='400'
+        width='780' alt='culture'>
+    <p>  &nbsp;&nbsp;&nbsp;&nbsp;Malaysia is a diverse country which consists of multiple ethnic races which shares different languages and
+        religions.
+        Each ethnicity has generally retained and continued their ancestors’ cultures and traditions.
+        As a result, Malaysian society consists of a rich variety of lifestyles, beliefs and values.
+        Among the different ethnic races, the Malay would consist the majority.
+        Therefore, the general Malaysian culture tends to reflect the Malay’s culture and traditions.
+        However, there are many other cultures and traditions that is being practiced in this multiracial society such
+        as Chinese culture and Indian culture.
+    </p>
+
+    <div id="culture-div">
+        <div class="culture-selection">
+            <img src="Malay.jpeg" height='200' width='300' alt='malay'>
+            <a href="Malay Culture.html">Malay</a>
+        </div>
+        <div class="culture-selection">
+            <img src="Chinese.jpeg" height='200' width='300' alt='Chinese'>
+            <a href="Chinese Culture.html">Chinese</a>
+        </div>
+        <div class="culture-selection">
+            <img src="Indian.jpeg" height='200' width='300' alt='Indian'>
+            <a href="Indian Culture.html">Indian</a>
+        </div>
+
+    </div>
+
+    <script>
+        for(let i = 0; i < 3; i++){
+            document.querySelectorAll(".culture-selection")[i].onmouseover = function(){
+                document.querySelectorAll(".culture-selection img")[i].width='400';
+                document.querySelectorAll(".culture-selection img")[i].height='250';
+                document.querySelectorAll(".culture-selection a")[i].style.fontSize='50px';
+
+            }
+
+            document.querySelectorAll(".culture-selection")[i].onmouseleave = function(){
+                document.querySelectorAll(".culture-selection img")[i].width='300';
+                document.querySelectorAll(".culture-selection img")[i].height='200';
+                document.querySelectorAll(".culture-selection a")[i].style.fontSize='40px';
+
+            }
+        }
+        </script>
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+       <div class="main-footer">
+       <div class="left-side">
+         <h2>Content</h2>
+        <p><a href="../Static/PrivateUni.html" style="text-decoration:none; color:white;">Private Universities</a></p>
+        <p><a href="../Static/Student Life.html" style="text-decoration:none; color:white;">Student Life In Malaysia</a></p>
+        <p><a href="../Static/Why Study.html" style="text-decoration:none; color:white;">Why Study In Malaysia</a></p>
+        
+       </div>
+        <div class= "center">
+        <p><a href="#" style="text-decoration:none; color:white;">Culture & Environment</a></p>
+        <p><a href="../Feedback/Feedback & Enquiry.php" style="text-decoration:none; color:white;">Feedback or Enquiry</a></p>
+        </div>
+       <div class= "right-side">
+            <h2>About this website</h2>
+            <p>Copyright &copy; Study Malaysia 2020
+              No.142, Jalan Ampang Jaya,
+              Pavilion E-Commerce Centre,
+              68000 Ampang, Selangor.
+              Tel:+03-43231132 / +6014-669 3837
+           </p>
+        <div class ="descriptions">
+            <a href='../Main Page/MainPage.php'>HOME</a>
+            <a href='../Main Page/MainPage.php'>ABOUT</a>
+            <a href='../Misc/others.html#help'>HELP</a>
+            <a href='../Misc/others.html#privacy'>PRIVACY</a>
+            <a href='../Misc/others.html#terms'>TERMS</a>
+          <p class="copyright">&copy;Study Malaysia 2020</p>
+         </div>
+       </div>
+       </div>
+       </div>
+</footer>
+</html>

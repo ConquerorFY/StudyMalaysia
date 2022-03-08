@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+background-color: #CD5C5C;
+width: 100%;
+height: 100px;
+}
+
+.header2{
+    background-color: 	#FFFFE0;
+    color: black;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid grey;
+}
+.align{
+    width: 980px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-ctrl{
+    float: left;
+}
+.image-ctrl img{
+  margin-top: 2px;
+    width: 140px;
+    height: 95px;
+    margin-left: -30px;
+}
+
+.btnlogin{
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+    font-family: -apple-system;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    margin-left: 770px;
+    margin-top: 30px;
+}
+.btnlogin:hover{
+background-color: rgb(58, 1, 1);
+color: whitesmoke;
+}
+
+.container{
+    box-sizing: content-box ;
+    width: 350px;
+    height: 500px;
+    margin-left: 280px;
+    margin-top: 70px;
+    padding: 30px;
+    border: 1px solid darkred;
+    border-style: groove;
+ }
+ .container h2{
+     font-family:'Montserrat', sans-serif;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+     color: maroon;
+     padding-bottom: 5px;
+ }
+ .container p{
+     font-family:'Montserrat', sans-serif;
+    color:grey;
+ }
+
+ .input-field{
+    float: center;
+    position: relative;
+    width: 100px;
+    box-shadow: darkred;
+}
+
+.input-field input:focus ~ label{
+    color: black;
+}
+#Username:focus{
+    outline: none;
+    box-shadow: 0 0 10px black;
+    color: darkred;
+    border-bottom:3px solid black;
+}
+#Password:focus{
+    outline: none;
+    box-shadow: 0 0 10px black;
+    color: darkred;
+    border-bottom:3px solid black;
+}
+#RePassword:focus{
+    outline: none;
+    box-shadow: 0 0 10px black;
+    color: darkred;
+    border-bottom:3px solid black;
+}
+
+label{
+    position: absolute;
+    top: 23px;
+    width: 330px;
+    margin-bottom:20px;
+    font-size: 16px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 800;
+    width: 330;
+    left: 5px;
+    pointer-events: none;
+    transition: .5s;
+    color:darkred;
+    background-color: transparent;
+}
+
+#Username{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: -42x;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:-apple-system;
+    color : black;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: -50px;
+    height: 65px;
+    width: 330px;
+    border-bottom: 3px solid darkred;
+    border-left: 1px solid darkred;
+    border-right: 1px solid darkred;
+    border-top: 1px solid darkred;
+    border-radius: 1px;
+    background-color: white;
+}
+#Password{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: -42x;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:-apple-system;
+    color : black;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: -50px;
+    height: 65px;
+    width: 330px;
+    border-bottom: 3px solid darkred;
+    border-left: 1px solid darkred;
+    border-right: 1px solid darkred;
+    border-top: 1px solid darkred;
+    border-radius: 1px;
+    background-color: white;
+}
+#RePassword{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: -42x;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:-apple-system;
+    color : black;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: -50px;
+    height: 65px;
+    width: 330px;
+    border-bottom: 3px solid darkred;
+    border-left: 1px solid darkred;
+    border-right: 1px solid darkred;
+    border-top: 1px solid darkred;
+    border-radius: 1px;
+    background-color: white;
+}
+
+#btnsubmit{
+    width: 260px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 25px;
+    background-color: darkred;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:white;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+#btnsubmit:hover{
+background-color: rgb(73, 2, 2);
+}
+
+.footer{
+    color:darkred;
+    font-size: 13px;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
+    height: 75px;
+    position: relative;
+    }
+    
+    .footer .descriptions{
+    height: 50px;
+    float: center;
+    text-align: center;
+    word-spacing: 100px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    }
+    
+    /*https://stackoverflow.com/questions/47551418/zoom-effect-on-text-words-on-mouseover*/
+    .footer .descriptions a{
+        color:darkred;
+        display: inline-block;
+        transition: .1s;
+        -webkit-transition: all 0.1s ease-out;
+    }
+    .footer .descriptions a:hover{
+        transform: scale(1.0);
+        -webkit-transform: scale(1.4) ;
+        color: crimson;
+        cursor: pointer;
+    }
+    .copyright{
+        color: grey;
+        word-spacing: normal;
+        font-style: italic;
+        font-weight: 600px;
+        text-align: center;
+        margin-top: 10px;
+        padding-left: -840px;
+    }

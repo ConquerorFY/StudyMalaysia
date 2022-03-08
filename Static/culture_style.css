@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    margin:0px;
+}
+
+h1 {
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: -180px;
+    width: 1000px;
+    text-align: left;
+    font-family: 'Varela', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: maroon;
+    border-bottom: 1px solid gray;
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+p {
+    margin: auto;
+    font-family: -apple-system;
+    font-size: 20px;
+    color: black;
+    width: 62%;
+    line-height: 1.6;
+    text-align: start;
+}
+
+#nav-div {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #CD5C5C;
+    opacity: 1;
+    height: 100px;
+    z-index:2;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow:hidden;
+    padding-top:60px;
+    transition:0.7s;
+}
+
+.nav a{
+    display:block;
+    padding:20px 30px;
+    font-size:115%;
+    text-decoration:none;
+    color:#ccc;
+    transition: 0.4s;
+}
+
+.nav a:hover{
+    color:#fff;
+}
+
+.nav .close{
+    position:absolute;
+    top:0;
+    right:22px;
+    margin-left:50px;
+    font-size:30px;
+}
+
+/* the overflow is used to prevent margin collapse between parent and child elements*/
+#main-content{
+    position:relative;
+    transition:margin-left 0.7s;
+    overflow:hidden;
+    width:100%;
+}
+
+.sub-nav{
+    background-color:#555;
+    opacity:0.9;
+    height:0px;
+    transition:0.4s;
+}
+
+.sub-nav a{
+    margin-bottom:25px;
+    height:auto;
+    transform:scaleY(0);
+    visibility:hidden;
+    cursor:none;
+    transition: transform 0.5s;
+
+}
+
+/*pointer-events (determine whether the pointer can interact with the element)*/
+
+#right-nav-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    color: whitesmoke;
+    height: 1100px;
+    background-color: #791818;
+    opacity: 0;
+    z-index:1;
+}
+
+#right-nav-menu a {
+    text-decoration: none;
+    color: wheat;
+    font-family: -apple-system;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#right-nav-menu li {
+    padding: 15px;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#right-nav-menu:hover {
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#right-nav-menu a:hover {
+    font-size: 19px;
+}
+
+.bottom-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    width: 100%;
+    height: 100px;
+    background-color: #cd5c5c;
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+}
+
+.bottom-div a,
+em {
+    color: black;
+    text-decoration: none black;
+    margin-top: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+div p {
+    display: block;
+}
+
+.sub-title {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Varela', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    cursor: pointer;
+    color: maroon;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.click {
+    border: solid darkred;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.main-menu {
+    display: inline-block;
+    cursor: pointer;
+    height: 60px;
+    background-color: #cd5c5c;
+    width: 60px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size:36px;
+}
+
+.main-footer {
+    position: absolute;
+    width: 100%;
+    background: darkred;
+    color: white;
+    height: 400px;
+    left:0px;
+    z-index:2;
+}
+
+.main-footer .descriptions {
+    background-color: #000;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    word-spacing: 140px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.main-footer .descriptions a {
+    display: inline-block;
+    color: white;
+    text-decoration-line:none;
+    transition: .2s;
+    -webkit-transition: all 0.1s ease-out;
+}
+
+.main-footer .descriptions a:hover {
+    cursor: pointer;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.2);
+    color: peachpuff;
+}
+
+
+.copyright {
+    color: snow;
+    word-spacing: normal;
+    font-style: italic;
+    font-weight: 600px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-footer .left-side {
+    float: left;
+    color: white;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+    margin-left: 100px;
+}
+
+.main-footer .left-side h2 {
+    font-size: 20px;
+
+}
+
+.main-footer .left-side p {
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left:0px;
+    color:white;
+}
+
+.main-footer .left-side p:hover {
+    background-color: rgb(71, 0, 0);
+    color: #FFFFE0;
+}
+
+.main-footer .right-side {
+    float: right;
+    width: 250px;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-footer .right-side h2 {
+    margin-top: -10px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    padding-bottom: 7px;
+}
+
+.main-footer .right-side p {
+    margin-top: 10px;
+    font-size: 18px;
+    color:white;
+    width:100%;
+}
+
+
+.main-footer .center {
+    float: left;
+    color: white;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+}
+
+.main-footer .center p {
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 19px;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color:white;
+
+}
+
+.main-footer .center p:hover {
+    background-color: rgb(71, 0, 0);
+    color: #FFFFE0;
+}

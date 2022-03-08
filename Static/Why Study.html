@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Why Study in Malaysia</title>
+    <link rel="icon"
+        href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='main_style.css'>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdown = document.querySelectorAll('h3.sub-title');
+            for (let i = 0; i < dropdown.length; i++) {
+                let chk = true;
+                dropdown[i].onclick = function () {
+                    if (!chk) {
+                        // 'button ~ p' => share same parents but no need immediately after, 'button + p' => share same parents and need immediately after
+                        document.querySelectorAll('h3.sub-title ~ p')[i].style.display = 'block';
+                        document.querySelectorAll('h3.sub-title ~ img')[i].style.display = 'block';
+                        if (document.querySelectorAll('h3.sub-title ~ table')[i] != null && document.querySelectorAll('h3.sub-title ~ figcaption')[i] != null) {
+                            document.querySelectorAll('h3.sub-title ~ table')[i].style.display = 'table';
+                            document.querySelectorAll('h3.sub-title ~ figcaption')[i].style.display = 'block';
+                        }
+                    } else {
+                        document.querySelectorAll('h3.sub-title ~ p')[i].style.display = 'none';
+                        document.querySelectorAll('h3.sub-title ~ img')[i].style.display = 'none';
+                        if (document.querySelectorAll('h3.sub-title ~ table')[i] != null && document.querySelectorAll('h3.sub-title ~ figcaption')[i] != null) {
+                            document.querySelectorAll('h3.sub-title ~ table')[i].style.display = 'none';
+                            document.querySelectorAll('h3.sub-title ~ figcaption')[i].style.display = 'none';
+                        }
+                    }
+                    document.querySelectorAll('h3.sub-title > .arrow')[i].classList.toggle('click');
+                    chk = !chk;
+                }
+
+            };
+
+        })
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo"
+            src="Screenshot 2020-08-22 at 10.02.00 PM.png">
+        <nav>
+            <ul class="nav_links">
+
+                <li><a class="nav-items" href="../Main Page/MainPage.php">Main Page</a></li>
+                <li><a class="nav-items" href="../Static/PrivateUni.html">Private Universities</a></li>
+                <li><a class="nav-items" href="../Static/Student Life.html">Student Life in Malaysia</a></li>
+                <li><a class="nav-items" href="#" style="pointer-events: none; color:wheat; border: 2px solid darkred;padding: 1px 1px 1px 1px;">Why Study in Malaysia</a></li>
+                <li><a class="nav-items" href="../Static/Culture&Environment.html">Culture and Environment</a></li>
+                <li><a class="nav-items" href="../Feedback/Feedback & Enquiry.php">Feedback or Enquiry</a></li>
+            </ul>
+            <form>
+                <input type="text" class="box" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <div id='right-nav-menu'>
+        <div style="margin-top:10px;margin-bottom:20px;">
+            <a href="#"><img src="Screenshot 2020-08-22 at 10.02.00 PM.png" height="90" width="100" alt="logo"></a>
+        </div>
+        <div style="margin-top: 20px;margin-bottom:60px; font-size: 30px;margin-left: 20px;margin-right: 20px;">
+            Quick Link to Different Sections
+        </div>
+        <ul>
+            <li><a href='#intro'>Why Study in Malaysia</a></li>
+            <li><a href='#fees'>Affordable Tuition Fees</a></li>
+            <li><a href='#cost-of-living'>Affordable Cost of Living</a></li>
+            <li><a href='#international-uni'>International Recognition Universities</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div id='main-content'>
+        <h1 id='intro' style='margin-top: 80px;margin-left: 50px;'>Why Study in Malaysia</h1>
+        <img style='margin-top: 300px;'
+            src='whystudy_banner.jpg' height='400'
+            width='780' alt='why-study'><br><br>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;In Malaysia, International Student life can be an amazing experience because of the
+            many benefits that students get to use including low-cost living,
+            diversity in culture and food, and even the weather. In the same time, it is the ease of travelling to
+            nearby countries and experiencing South Asia and
+            ease of language as English is widely spoken by the people of Malaysia.
+            As an international student, the application process can often be long and exhausting, however,
+            the process to enrol in Malaysia’s private universities as an international student is surprisingly
+            straightforward and easy.
+            Once you join as an international student in Malaysia, you will be sharing your student experience with
+            93,000 other international students from over almost 136 countries.
+        </p>
+        <div>
+            <h3 id='fees' class='sub-title'>Affordable Tuition Fees<i class='arrow'></i>
+            </h3>
+            <img style='margin-bottom: 50px;'
+                src='tuition.png'
+                height='350' width='550' alt='fees'>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;One of many reasons for international students to continue their higher
+                educations in Malaysia is that they will be surrounded by a
+                diverse ethnicity group of people and have numerous academic courses at very affordable prices compared
+                to other countries. Even in
+                Malaysia, the degree courses tuition fees are pretty affordable that allow the students to study here
+                and receive authorised certificates
+                from the private universities' partner universities in different countries like in the United Kingdom
+                and Australia.
+                In terms of reliability, international students can trust private higher institutions in Malaysia
+                because the Malaysian Qualification Agency
+                (MQA) fully monitors the quality of all fields of the education system. This does assure the quality of
+                private universities up to the mark and
+                all the students will be to obtain necessary skills that are valuable in their related area of job.
+                In Malaysia, even the students will be able to do a degree from an international university which
+                originally based outside of Malaysia.
+                For example, Monash University Malaysia students will pay Malaysian fees. As a comparison, for a
+                Bachelor of Business Degree at Monash University
+                in Australia, the students will need to pay approximately average tuition fees USD 45,000 whereas in
+                Malaysia for the same degree,
+                the international students need to pay USD 10,416 for Malaysian currency at Monash University Malaysia
+                campus. This will help a lot the international
+                students to save more money by continuing their higher education in Malaysia.
+            </p>
+            <br><br>
+
+            <table class="table-style">
+                <thead>
+                    <tr>
+                        <th>Programs</th>
+                        <th>Curtin University, Australia Campus Annual Fees (2019)</th>
+                        <th>Curtin University, Malaysia Campus Annual Fees (2019)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor of Business</td>
+                        <td>RM84,500 or USD20,200</td>
+                        <td>RM22,400 or USD5,400</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Engineering</td>
+                        <td>RM 102,500 or USD 24,500</td>
+                        <td>RM 29,696 or USD 7,100</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Computer Science</td>
+                        <td>RM 100,300 or USD 24,000</td>
+                        <td>RM 28,264 or USD 6,760</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figcaption
+                style="padding-top: 10px;padding-bottom: 30px;text-align:center; font-family:'Times New Roman', Times, serif;color: rgb(71, 0, 0);font-weight: bold;">
+                Figure 1: Comparison of tuition fees in Curtin University between the Australia Campus and the Malaysia
+                Campus
+            </figcaption>
+
+        </div>
+        <div>
+            <h3 id='cost-of-living' class='sub-title'>Affordable Cost of Living<i class='arrow'></i></h3>
+            <img style='margin-bottom: 50px;'
+                src='affordable.png'
+                height='350' width='550' alt='cost-of-living'>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;Over the past few years, Malaysia has emerged as one of the top study places for
+                international students because of the low living costs in Malaysia.
+                This advantage allows the students to gain sufficient time to enjoy, travel and experience a super side
+                of independent living in Malaysia.
+                The students can enjoy a good meal at $3 which helps save their costs very much here in Malaysia.
+                Moreover, the transport is also pretty convenient for
+                the students with public trains and buses running every day. Even the transport is very much affordable
+                for the students to pay for their daily routine
+                and public transport offering discounts specially for students. The rent is also very much affordable
+                where the students even can rent a decent condominium
+                at $ 130. In overall, the average cost of living in Malaysia is about USD 350 per month includes
+                accommodation, transportation, foods, utilities, and other miscellaneous.
+
+            </p>
+        </div>
+        <div>
+            <h3 id='international-uni' class='sub-title'>International Recognition Universities<i class='arrow'></i>
+            </h3>
+            <img style='margin-bottom: 50px;'
+                src='international.jpg' height='350' width='550'
+                alt='international-uni'>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;Malaysian both public and private universities are internationally recognised.
+                For example, private universities like Talyor's University, UCSI University and
+                Multimedia University (MMU) are placed rank in the QS World University Rankings. Also, University Malaya
+                (UM) was placed at number 70 position in 2020 QS World University Rankings.
+
+            </p>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div
+        style="background-color: rgb(156, 45, 45); border: solid black; width: 70%; padding-bottom: 20px;margin:auto; display:flex; justify-content: space-around; flex-wrap:wrap">
+        <div>
+            <img style="color: white;margin-top: 20px;"
+                src='Prem.jpeg'
+                height='120' width='120'>
+            <P style="color:wheat;white-space: pre; margin-left:00px; font-size:20px; font-style:italic">
+                Written By: Premsharaan A/L Selva
+                Published Date: 20 August 2020</P>
+        </div>
+        <P style="color:white;white-space: pre; margin-right: 110px;margin-top:0px; margin-left:0px; font-size:20px;">
+            Hobbies: Reading, Coding, Playing Computer Games
+            As of 2020, Mr. Prem is a Diploma Student currently
+            studying in Asia Pacific University.He is the owner
+            of the Study Malaysia Website together with Mr. Ryan.
+            Contact Details: 010-8223241
+            Email: tp055343@mail.apu.edu.my</P>
+    </div>
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <div class="main-footer">
+        <div class="left-side">
+            <h2>Content</h2>
+            <p><a href="../Static/PrivateUni.html" style="text-decoration:none; color:White;">Private Universities</a></p>
+            <p><a href="../Static/Student Life.html" style="text-decoration:none; color:White;">Study Life In Malaysia</a></p>
+            <p><a href="#" style="text-decoration:none; color:White;">Why Study In Malaysia</a></p>
+
+        </div>
+        <div class="center">
+            <p><a href="../Static/Culture&Environment.html" style="text-decoration:none; color:White;">Culture & Environment</a></p>
+            <p><a href="../Feedback/Feedback & Enquiry.php" style="text-decoration:none; color:White;">Feedback or Enquiry</a></p>
+        </div>
+        <div class="right-side">
+            <h2>About this website</h2>
+            <p>Copyright &copy; Study Malaysia 2020
+                No.142, Jalan Ampang Jaya,
+                Pavilion E-Commerce Centre,
+                68000 Ampang, Selangor.
+                Tel:+03-43231132 / +6014-669 3837
+            </p>
+        </div>
+        <div class="descriptions">
+            <a href='../Main Page/MainPage.php'>HOME</a>
+            <a href='../Main Page/MainPage.php'>ABOUT</a>
+            <a href='../Misc/others.html#help'>HELP</a>
+            <a href='../Misc/others.html#privacy'>PRIVACY</a>
+            <a href='../Misc/others.html#terms'>TERMS</a>
+            <p class="copyright">&copy;Study Malaysia 2020</p>
+        </div>
+    </div>
+    </div>
+</footer>
+
+</html>
